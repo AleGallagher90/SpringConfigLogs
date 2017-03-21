@@ -1,0 +1,98 @@
+------------------------------------------------------------------------------------------------------------------------
+Log RabiitMQ.
+------------------------------------------------------------------------------------------------------------------------
+sudo docker run --name rabbitmq -p 5672:5672 rabbitmq
+              RabbitMQ 3.6.6. Copyright (C) 2007-2016 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: tty
+  ######  ##        tty
+  ##########
+              Starting broker...
+
+=INFO REPORT==== 21-Mar-2017::01:37:35 ===
+Starting RabbitMQ 3.6.6 on Erlang 19.2
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 21-Mar-2017::01:37:35 ===
+node           : rabbit@a0d42eb949c0
+home dir       : /var/lib/rabbitmq
+config file(s) : /etc/rabbitmq/rabbitmq.config
+cookie hash    : yHmlPxuUt1K9AwpRSCkv0g==
+log            : tty
+sasl log       : tty
+database dir   : /var/lib/rabbitmq/mnesia/rabbit@a0d42eb949c0
+
+=INFO REPORT==== 21-Mar-2017::01:37:39 ===
+Memory limit set to 1580MB of 3951MB total.
+
+=INFO REPORT==== 21-Mar-2017::01:37:39 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 21-Mar-2017::01:37:39 ===
+Limiting to approx 65436 file handles (58890 sockets)
+
+=INFO REPORT==== 21-Mar-2017::01:37:39 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 21-Mar-2017::01:37:40 ===
+Database directory at /var/lib/rabbitmq/mnesia/rabbit@a0d42eb949c0 is empty. Initialising from scratch...
+
+=INFO REPORT==== 21-Mar-2017::01:37:40 ===
+    application: mnesia
+    exited: stopped
+    type: temporary
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Adding vhost '/'
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Creating user 'guest'
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Setting user tags for user 'guest' to [administrator]
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Setting permissions for 'guest' in '/' to '.*', '.*', '.*'
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 21-Mar-2017::01:37:42 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+started TCP Listener on [::]:5672
+ completed with 0 plugins.
+
+=INFO REPORT==== 21-Mar-2017::01:37:42 ===
+Server startup complete; 0 plugins started.
+
+------------------------------------------------------------------------------------------------------------------------
+Log after the services started.
+------------------------------------------------------------------------------------------------------------------------
+
+=INFO REPORT==== 21-Mar-2017::01:47:10 ===
+accepting AMQP connection <0.369.0> (172.17.0.1:34616 -> 172.17.0.2:5672)
+
+=INFO REPORT==== 21-Mar-2017::01:47:10 ===
+Connection <0.369.0> (172.17.0.1:34616 -> 172.17.0.2:5672) has a client-provided name: rabbitConnectionFactory#0
+
+=INFO REPORT==== 21-Mar-2017::01:53:54 ===
+accepting AMQP connection <0.398.0> (172.17.0.1:34868 -> 172.17.0.2:5672)
+
+=INFO REPORT==== 21-Mar-2017::01:53:54 ===
+Connection <0.398.0> (172.17.0.1:34868 -> 172.17.0.2:5672) has a client-provided name: rabbitConnectionFactory#0
+
+
